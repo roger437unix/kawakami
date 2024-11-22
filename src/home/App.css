@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+
+
+
+
+body {
+    background-color: #EBEBEB;
+}
+
+.show-detalhe{
+    display: block;
+}
+
+.hide-detalhe{
+    display: none;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.modal-overlay {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding-left: 40%;
+    z-index: 1000;
+}
+
+.sidebar {
+    padding: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-logo img {
+    width: 500px; 
+    padding-top: 50px;
+    margin-bottom: 190px;
+    margin-left: -55px;
+    margin-top: -60px;
+}
+
+/* .sidebar::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1;
+    height: 100%;
+    background-color: #636363;
+} */
+
+
+.sidebar-menu {
+    list-style: none;
+    padding: 50px;
+    width: 100%;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 43px;
+    height: 43px;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.menu-item a:hover {
+    color: #F07B07;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #EBEBEB;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    position: relative;
+    margin: 0 125px;
+}
+
+.tab-button.active {
+    color: #F07B07;
+}
+
+.tab-button.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #F07B07;
+}
+
+.tab-content {
+    display: none;
+    text-align: center;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+.job-card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+    margin: 40px auto;
+    align-items: center;
+    position: relative;
+}
+
+.job-card img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    margin-top: -160px;
+}
+
+.job-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.job-title {
+    font-size: 20px;
+    font-weight: 40px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.job-difficulty {
+    font-size: 16px;
+    color: #494444;
+    margin-bottom: 10px;
+}
+
+.job-difficulty span {
+    color: #52504f;
+    
+}
+
+.job-description {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.verCandidatos register-btn {
+    background-color: #E97911;
+    width: 150px;
+    height: 32px;
+    border: none;
+    color: #EBEBEB;
+    border-radius: 15px;
+}
+
+.job-timing {
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.job-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: #F07B07;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile-icon {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.profile-icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.addBico{
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.addBico p{
+    color: #EBEBEB;
+    font-size: 40px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
+.addBico_{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.sidebar{
+    position: fixed
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; 
+}
+
+.custom-loader {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000 10%, #F07B07) content-box;
+    -webkit-mask:
+      repeating-conic-gradient(#0000 0deg, #000 1deg 20deg, #0000 21deg 36deg),
+      radial-gradient(farthest-side, #0000 calc(100% - 9px), #000 calc(100% - 8px));
+    -webkit-mask-composite: destination-in;
+    mask-composite: intersect;
+    animation: s4 1s infinite steps(10);
+}
+  
+@keyframes s4 {
+    to { transform: rotate(1turn); }
+}

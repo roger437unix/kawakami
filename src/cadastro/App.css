@@ -1,0 +1,122 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #EBEBEB;
+}
+
+
+.decoracaoLaranja {
+  position: absolute;
+  width: 100%;
+  height: 467px;
+  
+  background: linear-gradient(to right, #F07B07, #E25401);
+  z-index: 0;
+}
+
+.decoracaoCinza {
+  width: 550px;
+  height: 460px;
+  border-radius: 194px;
+  background-color: #EBEBEB;
+  left: -20px;
+  top: 220px;
+  transform: rotate(-168deg);
+  position: absolute;
+  z-index: 0;
+}
+
+.decoracaoCinza2 {
+  width: 2190px;
+  height: 460px;
+  background-color: #EBEBEB;
+  position: absolute;
+  transform: rotate(-173.10deg);
+  transform-origin: center;
+  left: 150px;
+  top: 334px;
+  z-index: 0;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 62%;
+  transform: translateY(-50%);
+  padding: 10px;
+  width: 100%;
+  
+}
+
+
+
+h1 {
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.app-container input {
+  width: 350px;
+  padding: 8px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  font-size: 16px;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #F07B07;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 280px;
+  font-family: "Inter", sans-serif;
+  
+}
+
+h1{
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  margin: 0;
+  color: red;
+  font-size: 0.700rem;
+  font-family: "Inter", sans-serif;
+}
+
+.logoPrincipal {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+

@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+
+:root {
+    --laranja: #F07B07;
+    --branco: #EBEBEB;
+    --laranja-escuro: #E25401;
+    --cinza: #ccc;
+}
+
+body {
+    background-color: #EBEBEB;
+}
+
+/* Decorações no fundo
+.decoracaoLaranja-senha {
+    position: absolute;
+    width: 100%;
+    height: 467px;
+    background: linear-gradient(to right, #F07B07, #E25401);
+    z-index: 0; 
+
+.decoracaoCinza-senha {
+    width: 550px;
+    height: 460px;
+    border-radius: 194px;
+    background-color: #EBEBEB;
+    left: -20px;
+    top: 220px;
+    transform: rotate(-168deg);
+    position: absolute;
+    z-index: 0;
+}
+
+.decoracaoCinza2-senha {
+    width: 2190px;
+    height: 460px;
+    background-color: #EBEBEB;
+    position: absolute;
+    transform: rotate(-173.10deg);
+    transform-origin: center;
+    left: 150px;
+    top: 334px;
+    z-index: 0;
+} */
+
+/* Container centralizado e à frente das decorações */
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1; /* Traz o container à frente das decorações */
+}
+
+.content-container2 {
+    z-index: 2; /* Garante que o conteúdo dentro da "content-container" fique à frente */
+}
+
+/* Logo */
+.logoPrincipal {
+    margin-bottom: 30px;
+}
+
+.feedback {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #28a745;
+    display: none;
+}
+
+.feedback.error {
+    color: #dc3545;
+}
+
+.cardSenha {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 30px; /* Espaço entre a caixa e os outros elementos */
+}
+
+h2 {
+    margin-bottom: 5px;
+    font-size: 25px;
+    color: #333;
+    margin-top: 0;
+}
+
+.codigo-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.codigo-digit {
+    width: 30px;
+    height: 130px;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid #9e9e9e;
+}
+
+.codigo-digit:focus {
+    outline: none;
+    border-bottom: 2px solid #E97911;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #E97911;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 35%;
+    max-width: 400px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centraliza o botão */
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+    background-color: #d7700b;
+}
+
+.btn-laranja {
+    padding: 12px 20px;
+    background-color: #E97911;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 35%;
+    max-width: 400px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centraliza o botão */
+}
+
+.codigo {
+    font-weight: bold;
+    font-size: 17px;
+    color: #535353;
+    margin-top: 15px;
+    text-align: center; /* Centraliza a mensagem */
+}
+
+.btn-laranja.clicado {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

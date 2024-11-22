@@ -1,0 +1,88 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+
+body {
+    background-color: #EBEBEB;
+}
+
+.histórico-container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.histórico-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.histórico-title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: #E97911;
+    margin: 5px auto 20px;
+}
+
+.histórico-card {
+    display: flex;
+    background-color: #FFF;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 100%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.histórico-decorative-line {
+    width: 15px;
+    background-color: #E97911;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+
+.histórico-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.histórico-card-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.histórico-card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.histórico-finalize-button {
+    background-color: #E97911;
+    color: #ffffff;
+    border: none;
+    padding: 8px 38px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.histórico-expiry-text {
+    font-size: 14px;
+    color: #7d7d7d;
+} */

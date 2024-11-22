@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background-color: #EBEBEB;
+  }
+
+  .addBico-container{
+    display: grid;
+    /* align-items: center;
+    align-self: center;
+   */
+  }
+
+  .bico-app-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 400px;
+  }
+
+  .bico-input-container{
+    
+    display: grid;
+  }
+  
+  .button-criar-addBico{
+    margin-left: 18px;
+  }
+
+  h1{
+    position: absolute;
+    left: 54%;
+    top: 40px;
+  }
+
+  select{
+    width: 900px;
+    height: 50px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 1px #E25401;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: #858181;
+    padding-left: 10px;
+  }
+
+  .carregar{
+    position: absolute;
+    z-index: 10px;
+    
+    
+  }
+
+  .bico-input-container textarea{
+    width: 900px;
+    height: 100px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 1px #E25401;
+  }
+
+  .bico-input-container input{
+    width: 900px;
+    height: 70px;
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+    border-bottom: 1px #E25401;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    padding-left: 10px;
+  
+  }
+
+  .error {
+    color: red;
+    font-size: 0.8em; 
+    margin-top: 0.5em; 
+}

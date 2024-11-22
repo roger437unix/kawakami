@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+}
+
+body {
+    background-color: #EBEBEB;
+}
+
+.cards-panel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 520px;
+    margin-top: 250px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    margin: 15px auto;
+    padding: 10px;
+    width: 300px;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #FFEBCC;
+}
+
+.card-detail {
+    width: 7px;
+    height: 90px;
+    background-color: #F07B07;
+    margin-right: 10px;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+.card-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333333;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #666666;
+}
+
+.image-panel {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 320px;
+    width: 300px;
+    flex-direction: column;
+}
+
+.logo-image {
+    width: 200px;
+    height: auto;
+}
+
+.image-description {
+    margin-top: 5px;
+    font-size: 14px;
+    
+    color: #929292;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-details {
+    margin-left: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-title {
+    margin-bottom: 10px;
+    margin-top: 120px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.account-card {
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 7px;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.account-title {
+    position: relative;
+}
+
+.account-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 120px;
+    margin-left: 200px;
+    position: relative;
+}
+
+.account-title::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #F07B07;
+    margin: 10px auto 0;
+}
+
+.info {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.info-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logout-button {
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.logout-button:hover {
+    background-color: #D06506;
+}
+
+.security-settings {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.security-title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.security-description {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.security-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.security-form .info {
+    margin-bottom: 15px;
+}
+
+.security-form label {
+    font-weight: bold;
+}
+
+.security-form input {
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.update-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #F07B07;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.update-button:hover {
+    background-color: #D06506;
+}
+
+.forgot-password {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #F07B07;
+    text-decoration: none;
+}
+
+.account-title {
+    margin-left: 245px;
+}
+
+.account-card {
+    margin-bottom: 20px;
+    background-color: rgba(217, 217, 217, 0.62);
+}
+
+.suporte textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    resize: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: -10px;
+}
+
+.character-count {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #666;
+}
+
+.send-button {
+    background-color: #E97911;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.logout-icon {
+    position: fixed; 
+    bottom: 20px;   
+    right: 20px;     
+    cursor: pointer; 
+    display: inline-block;
+}
+
+.logout-img {
+    width: 50px;    
+    height: 50px;  
+}
+
+
+.send-button:hover {
+    background-color: #d66a0c;
+}
+
+.sub-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info-value {
+    margin-bottom: 17px;
+}
+
+.card-price {
+    font-size: 16px;
+    color: #F07B07;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.premium-details {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    height: 400px;
+    max-width: 400px;
+}
+
+.premium-content img {
+    width: 50px; /* Tamanho do ícone */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.premium-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.premium-description {
+    font-family: Arial, sans-serif;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.premium-description p {
+    margin: 5px 0;
+}
+
+.premium-description strong {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.premium-note {
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 5px;
+}
+
+.premium-button {
+    background-color: #f68b1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.premium-button:hover {
+    background-color: #e07c14;
+}

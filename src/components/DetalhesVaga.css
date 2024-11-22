@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+  }
+
+  .detalhes-vaga{
+    z-index: 10;
+    position: absolute;
+    place-self: center;
+    transform: translateY(50%);
+    background-color: #e4e4e4f5;
+    padding: 24px;
+    width: 500px;
+    max-height: 60vh;
+    border-radius: 10px;
+  }
+
+  .info-nome-dificuldade{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .info-empresa{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: #504D4D;
+  }
+  .info-empresa h2{
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  .info-dificuldade span{
+    font-weight: 700;
+    color: #7E7E7E;
+  }
+  .info-dificuldade :nth-child(2){
+    color: #106B16;
+  }
+
+  .titulo-trabalho-detalhes{
+    text-align: start;
+    font-weight: 500;
+    padding: 12px 0;
+  }
+
+  .descricao-detalhes{
+    text-align: start;
+    font-size: 1rem;
+    color: #736C6C;
+    padding: 12px 0;
+  }
+
+  .info-horario-pagamento{
+    text-align: start;
+    padding: 32px 0;
+  }
+
+  .info-horario-pagamento span{
+    color: #464646;
+    font-weight: bold;
+  }
+  .info-horario-pagamento .valor-pagamento{
+    color: #378420;
+  }
+  .container-botoes{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-botoes button{
+    color: white;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: none;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  #excluir-anuncio{
+    width: 40%;
+    background-color: red;
+  }
+
+  .ver-candidatos{
+    width: 100px;
+    height: 50px;
+    
+  }
